@@ -1,0 +1,154 @@
+{
+  "checkpoint": {
+    "dev_val_accuracy": 0.9979494190020506,
+    "dev_val_loss": 0.00730585365807671,
+    "epoch": 5,
+    "original_pretrained_weights": "IMAGENET1K_V1",
+    "path": "checkpoints/best_model.pt",
+    "selection_criterion": "minimum dev-validation loss; earliest epoch on ties",
+    "selection_verified_against_history": true,
+    "sha256": "4e46ba5754b823c558d88e172aee205517a220f340b6f907d3a1109534f49d75",
+    "test_used_for_checkpoint_selection": false
+  },
+  "checkpoint_unchanged": true,
+  "class_names": [
+    "dog",
+    "cat",
+    "wild"
+  ],
+  "confusion_matrix_axes": {
+    "columns": "predicted class",
+    "rows": "true class"
+  },
+  "confusion_matrix_image": "results/confusion_matrix.png",
+  "dependencies": {
+    "matplotlib": "3.10.7",
+    "scikit-learn": "1.7.2",
+    "torch": "2.9.1",
+    "torchvision": "0.24.1"
+  },
+  "dev_test_comparison": {
+    "dev_accuracy": 0.9979494190020506,
+    "test_accuracy": 0.998,
+    "test_minus_dev_percentage_points": 0.0050580997949412065
+  },
+  "device": "cpu",
+  "metrics": {
+    "accuracy": 0.998,
+    "classification_report": {
+      "accuracy": 0.998,
+      "cat": {
+        "f1-score": 0.998998998998999,
+        "precision": 1.0,
+        "recall": 0.998,
+        "support": 500.0
+      },
+      "dog": {
+        "f1-score": 0.998,
+        "precision": 0.998,
+        "recall": 0.998,
+        "support": 500.0
+      },
+      "macro avg": {
+        "f1-score": 0.9980006653339988,
+        "precision": 0.9980026613439787,
+        "recall": 0.9979999999999999,
+        "support": 1500.0
+      },
+      "weighted avg": {
+        "f1-score": 0.9980006653339987,
+        "precision": 0.9980026613439787,
+        "recall": 0.998,
+        "support": 1500.0
+      },
+      "wild": {
+        "f1-score": 0.997002997002997,
+        "precision": 0.9960079840319361,
+        "recall": 0.998,
+        "support": 500.0
+      }
+    },
+    "confusion_matrix": [
+      [
+        499,
+        0,
+        1
+      ],
+      [
+        0,
+        499,
+        1
+      ],
+      [
+        1,
+        0,
+        499
+      ]
+    ]
+  },
+  "misclassified_examples": [
+    {
+      "path": "val/dog/pixabay_dog_003105.jpg",
+      "predicted_class": "wild",
+      "true_class": "dog"
+    },
+    {
+      "path": "val/cat/pixabay_cat_000876.jpg",
+      "predicted_class": "wild",
+      "true_class": "cat"
+    },
+    {
+      "path": "val/wild/flickr_wild_000517.jpg",
+      "predicted_class": "dog",
+      "true_class": "wild"
+    }
+  ],
+  "observed_confusions": [
+    {
+      "count": 1,
+      "predicted_class": "wild",
+      "true_class": "dog"
+    },
+    {
+      "count": 1,
+      "predicted_class": "wild",
+      "true_class": "cat"
+    },
+    {
+      "count": 1,
+      "predicted_class": "dog",
+      "true_class": "wild"
+    }
+  ],
+  "preprocessing": {
+    "image_size": 224,
+    "interpolation": "bilinear",
+    "normalization_mean": [
+      0.485,
+      0.456,
+      0.406
+    ],
+    "normalization_std": [
+      0.229,
+      0.224,
+      0.225
+    ]
+  },
+  "sample_count": 1500,
+  "status": "completed",
+  "test_set_usage": "Final evaluation only; not used for tuning or checkpoint selection in this pipeline.",
+  "model_export": {
+    "checkpoint": "checkpoints/best_model.pt",
+    "sha256": "4e46ba5754b823c558d88e172aee205517a220f340b6f907d3a1109534f49d75",
+    "original_evaluation_sha256": "a7fe1ad467ba1de8059c06b317f95600c9437cfee4d726201dfe73a1b109e509",
+    "tensor_state_unchanged": true,
+    "metadata_change": "Absolute development paths converted to portable relative paths.",
+    "selected_epoch": 5,
+    "dev_validation_loss": 0.00730585365807671,
+    "class_names": [
+      "dog",
+      "cat",
+      "wild"
+    ]
+  }
+}

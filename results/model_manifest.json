@@ -1,0 +1,14 @@
+{
+  "checkpoint": "checkpoints/best_model.pt",
+  "sha256": "4e46ba5754b823c558d88e172aee205517a220f340b6f907d3a1109534f49d75",
+  "original_evaluation_sha256": "a7fe1ad467ba1de8059c06b317f95600c9437cfee4d726201dfe73a1b109e509",
+  "tensor_state_unchanged": true,
+  "metadata_change": "Absolute development paths converted to portable relative paths.",
+  "selected_epoch": 5,
+  "dev_validation_loss": 0.00730585365807671,
+  "class_names": [
+    "dog",
+    "cat",
+    "wild"
+  ]
+}

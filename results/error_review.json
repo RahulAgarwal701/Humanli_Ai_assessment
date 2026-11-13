@@ -1,0 +1,47 @@
+{
+  "checkpoint_sha256": "4e46ba5754b823c558d88e172aee205517a220f340b6f907d3a1109534f49d75",
+  "evaluation_accuracy": 0.998,
+  "dev_accuracy": 0.9979494190020506,
+  "agreement": "Test accuracy 99.80% and dev accuracy 99.7949% closely agree; the gap is +0.0051 percentage points.",
+  "reviews": [
+    {
+      "path": "val/dog/pixabay_dog_003105.jpg",
+      "true_class": "dog",
+      "predicted_class": "wild",
+      "observation": "Upright ears, gray fur and an elongated muzzle give a wolf-like appearance.",
+      "hypothesis": "Visual overlap between domestic and wild canids may explain the error."
+    },
+    {
+      "path": "val/cat/pixabay_cat_000876.jpg",
+      "true_class": "cat",
+      "predicted_class": "wild",
+      "observation": "The image has wild-felid characteristics, including a strongly patterned coat and broad feline face.",
+      "hypothesis": "The supplied cat label may be ambiguous relative to the wild category; this needs an independent label/class-definition review."
+    },
+    {
+      "path": "val/wild/flickr_wild_000517.jpg",
+      "true_class": "wild",
+      "predicted_class": "dog",
+      "observation": "The gray, pointed-eared animal has facial features shared by domestic dogs and wild canids.",
+      "hypothesis": "Shared canid appearance may explain the error."
+    }
+  ],
+  "caveat": "Visual observations suggest possible causes; they do not establish the model\u2019s causal reasoning or prove a mislabeled image.",
+  "labels_changed": false,
+  "test_results_used_to_tune_model": false,
+  "checkpoint_selection": "Fixed by minimum dev-validation loss before final-test evaluation.",
+  "model_export": {
+    "checkpoint": "checkpoints/best_model.pt",
+    "sha256": "4e46ba5754b823c558d88e172aee205517a220f340b6f907d3a1109534f49d75",
+    "original_evaluation_sha256": "a7fe1ad467ba1de8059c06b317f95600c9437cfee4d726201dfe73a1b109e509",
+    "tensor_state_unchanged": true,
+    "metadata_change": "Absolute development paths converted to portable relative paths.",
+    "selected_epoch": 5,
+    "dev_validation_loss": 0.00730585365807671,
+    "class_names": [
+      "dog",
+      "cat",
+      "wild"
+    ]
+  }
+}

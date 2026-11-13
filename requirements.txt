@@ -1,0 +1,10 @@
+# Complete runtime and test dependencies for all six phases.
+# Python 3.10+; Python 3.12 or 3.13 recommended. Plotting uses matplotlib.
+# Phase 1's original environment versions remain recorded in run_metadata.json.
+torch==2.9.1
+torchvision==0.24.1
+numpy==2.2.6
+Pillow==12.0.0
+scikit-learn==1.7.2
+pytest==8.4.2
+matplotlib==3.10.7

@@ -1,0 +1,28 @@
+# Python/runtime files
+__pycache__/
+*.py[cod]
+.venv*/
+.pytest_cache/
+.DS_Store
+
+# Dataset and local input images
+afhq/
+new_images/
+
+# Download caches and historical development outputs
+artifacts/torch_hub/
+artifacts/phase1/run_metadata.json
+artifacts/phase2/
+artifacts/phase3/
+artifacts/phase4/
+artifacts/phase5/
+artifacts/phase6/
+docs/phase_notes.md
+**/matplotlib_cache/
+**/render_cache/
+
+# Generated delivery archives and staging folders
+*.zip
+submission/
+
+# Trained checkpoints and results/ are intentionally included.

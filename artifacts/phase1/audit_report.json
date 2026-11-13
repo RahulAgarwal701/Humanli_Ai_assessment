@@ -1,0 +1,115 @@
+{
+  "conflicting_label_groups": [],
+  "duplicate_groups": [
+    {
+      "files": [
+        {
+          "label": "wild",
+          "path": "train/wild/pixabay_wild_000213.jpg",
+          "source": "train"
+        },
+        {
+          "label": "wild",
+          "path": "train/wild/pixabay_wild_000270.jpg",
+          "source": "train"
+        }
+      ],
+      "group_id": "1adbd417679dfd531098c4d7e527369bd999e81d"
+    },
+    {
+      "files": [
+        {
+          "label": "wild",
+          "path": "train/wild/flickr_wild_001376.jpg",
+          "source": "train"
+        },
+        {
+          "label": "wild",
+          "path": "train/wild/flickr_wild_001377.jpg",
+          "source": "train"
+        }
+      ],
+      "group_id": "93c38ab302f4d0d404bdd1d0a2c7d6374f2c48b6"
+    },
+    {
+      "files": [
+        {
+          "label": "wild",
+          "path": "train/wild/flickr_wild_000356.jpg",
+          "source": "train"
+        },
+        {
+          "label": "wild",
+          "path": "train/wild/flickr_wild_000359.jpg",
+          "source": "train"
+        }
+      ],
+      "group_id": "95e3583ee053f8f7948f947885756b1ba0485624"
+    },
+    {
+      "files": [
+        {
+          "label": "wild",
+          "path": "train/wild/pixabay_wild_001213.jpg",
+          "source": "train"
+        },
+        {
+          "label": "wild",
+          "path": "train/wild/pixabay_wild_001214.jpg",
+          "source": "train"
+        }
+      ],
+      "group_id": "a6b6bc77068e4b24d8164da5502b12b46369c886"
+    }
+  ],
+  "errors": [],
+  "extra_duplicate_copies": 4,
+  "hash_algorithm": "sha1",
+  "ignored_hidden_entries": [],
+  "passed": true,
+  "sources": {
+    "train": {
+      "class_counts": {
+        "cat": 5153,
+        "dog": 4739,
+        "wild": 4738
+      },
+      "formats": {
+        "JPEG": 14630
+      },
+      "modes": {
+        "RGB": 14630
+      },
+      "readable_class_counts": {
+        "cat": 5153,
+        "dog": 4739,
+        "wild": 4738
+      },
+      "sizes": {
+        "512x512": 14630
+      }
+    },
+    "val": {
+      "class_counts": {
+        "cat": 500,
+        "dog": 500,
+        "wild": 500
+      },
+      "formats": {
+        "JPEG": 1500
+      },
+      "modes": {
+        "RGB": 1500
+      },
+      "readable_class_counts": {
+        "cat": 500,
+        "dog": 500,
+        "wild": 500
+      },
+      "sizes": {
+        "512x512": 1500
+      }
+    }
+  },
+  "train_test_overlap_hashes": []
+}

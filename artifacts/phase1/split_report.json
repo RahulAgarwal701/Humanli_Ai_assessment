@@ -1,0 +1,77 @@
+{
+  "actual_dev_ratio": 0.1,
+  "baseline_class_proportions": {
+    "cat": 0.35222146274777855,
+    "dog": 0.32392344497607656,
+    "wild": 0.3238550922761449
+  },
+  "class_proportion_tolerance": 0.02,
+  "coverage_exactly_once": true,
+  "overlap_hash_counts": {
+    "dev_test": 0,
+    "train_dev": 0,
+    "train_test": 0
+  },
+  "passed": true,
+  "requested_dev_ratio": 0.1,
+  "split_ratio_tolerance": 0.01,
+  "splits": {
+    "dev": {
+      "absolute_deviation_from_training_pool": {
+        "cat": 0.0011619958988379753,
+        "dog": 0.0007518796992481147,
+        "wild": 0.00191387559808609
+      },
+      "class_counts": {
+        "cat": 517,
+        "dog": 475,
+        "wild": 471
+      },
+      "class_proportions": {
+        "cat": 0.3533834586466165,
+        "dog": 0.3246753246753247,
+        "wild": 0.3219412166780588
+      },
+      "count": 1463,
+      "unique_groups": 1463
+    },
+    "test": {
+      "absolute_deviation_from_training_pool": {
+        "cat": 0.01888812941444523,
+        "dog": 0.009409888357256757,
+        "wild": 0.009478241057188419
+      },
+      "class_counts": {
+        "cat": 500,
+        "dog": 500,
+        "wild": 500
+      },
+      "class_proportions": {
+        "cat": 0.3333333333333333,
+        "dog": 0.3333333333333333,
+        "wild": 0.3333333333333333
+      },
+      "count": 1500,
+      "unique_groups": 1500
+    },
+    "train": {
+      "absolute_deviation_from_training_pool": {
+        "cat": 0.0001291106554264787,
+        "dog": 8.354218880535225e-05,
+        "wild": 0.00021265284423183095
+      },
+      "class_counts": {
+        "cat": 4636,
+        "dog": 4264,
+        "wild": 4267
+      },
+      "class_proportions": {
+        "cat": 0.35209235209235207,
+        "dog": 0.3238399027872712,
+        "wild": 0.3240677451203767
+      },
+      "count": 13167,
+      "unique_groups": 13163
+    }
+  }
+}

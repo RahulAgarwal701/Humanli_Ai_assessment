@@ -1,0 +1,122 @@
+{
+  "accuracy_plot": "results/accuracy_curve.png",
+  "best_epoch": 5,
+  "best_val_loss": 0.00730585365807671,
+  "checkpoint": "checkpoints/best_model.pt",
+  "config": {
+    "adam_betas": [
+      0.9,
+      0.999
+    ],
+    "adam_eps": 1e-08,
+    "architecture": "resnet18",
+    "batch_size": 32,
+    "checkpoint_filename": "best_model.pt",
+    "class_names": [
+      "dog",
+      "cat",
+      "wild"
+    ],
+    "class_proportion_tolerance": 0.02,
+    "curve_loss_tolerance": 0.01,
+    "dataset_root": "afhq",
+    "deterministic_training": true,
+    "dev_ratio": 0.1,
+    "device": "auto",
+    "epochs": 5,
+    "freeze_features": true,
+    "grid_samples_per_class": 4,
+    "horizontal_flip_probability": 0.5,
+    "image_size": 224,
+    "interpolation": "bilinear",
+    "jitter_brightness": 0.2,
+    "jitter_contrast": 0.2,
+    "lr": 0.001,
+    "manifest_path": "artifacts/phase1/split_manifest.csv",
+    "model_check_batch_size": 4,
+    "normalization_mean": [
+      0.485,
+      0.456,
+      0.406
+    ],
+    "normalization_std": [
+      0.229,
+      0.224,
+      0.225
+    ],
+    "num_classes": 3,
+    "num_workers": 0,
+    "output_dir": "artifacts/phase1",
+    "phase": 4,
+    "phase2_output_dir": "artifacts/phase2",
+    "phase3_output_dir": "artifacts/phase3",
+    "phase4_output_dir": "checkpoints",
+    "pin_memory": false,
+    "plot_dpi": 140,
+    "pretrained_weights": "IMAGENET1K_V1",
+    "rotation_degrees": 10.0,
+    "rotation_fill": 0,
+    "seed": 42,
+    "split_ratio_tolerance": 0.01,
+    "test_folder": "val",
+    "torch_hub_dir": "artifacts/torch_hub",
+    "train_folder": "train",
+    "underfit_accuracy_threshold": 0.6,
+    "weight_decay": 0.0
+  },
+  "curve_assessment": "Inconclusive or plateauing curves: no clear joint loss improvement; inspect the saved curves before drawing conclusions.",
+  "dataset_counts": {
+    "dev": 1463,
+    "train": 13167
+  },
+  "dependencies": {
+    "Pillow": "12.0.0",
+    "matplotlib": "3.10.7",
+    "numpy": "2.2.6",
+    "torch": "2.9.1",
+    "torchvision": "0.24.1"
+  },
+  "device": "mps",
+  "history": [
+    {
+      "epoch": 1,
+      "train_accuracy": 0.9906584643426749,
+      "train_loss": 0.05582496581084261,
+      "val_accuracy": 0.9986329460013671,
+      "val_loss": 0.01600098007922624
+    },
+    {
+      "epoch": 2,
+      "train_accuracy": 0.9965823650034177,
+      "train_loss": 0.015144496435304503,
+      "val_accuracy": 0.9986329460013671,
+      "val_loss": 0.010174565857454724
+    },
+    {
+      "epoch": 3,
+      "train_accuracy": 0.9961266803372066,
+      "train_loss": 0.012415292148369296,
+      "val_accuracy": 0.9986329460013671,
+      "val_loss": 0.009888451344170901
+    },
+    {
+      "epoch": 4,
+      "train_accuracy": 0.9975696817802081,
+      "train_loss": 0.009951180479219435,
+      "val_accuracy": 0.9952153110047847,
+      "val_loss": 0.009631036876794357
+    },
+    {
+      "epoch": 5,
+      "train_accuracy": 0.9970380496696286,
+      "train_loss": 0.010288567618862161,
+      "val_accuracy": 0.9979494190020506,
+      "val_loss": 0.00730585365807671
+    }
+  ],
+  "loss_plot": "results/loss_curve.png",
+  "pretrained_weights_loaded": true,
+  "python": "3.12.7",
+  "status": "completed",
+  "test_dataset_constructed": false
+}

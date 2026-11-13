@@ -1,0 +1,161 @@
+{
+  "checkpoint": {
+    "dev_val_accuracy": 0.9979494190020506,
+    "dev_val_loss": 0.00730585365807671,
+    "epoch": 5,
+    "original_pretrained_weights": "IMAGENET1K_V1",
+    "path": "checkpoints/best_model.pt",
+    "selection_criterion": "minimum dev-validation loss; earliest epoch on ties",
+    "selection_verified_against_history": true,
+    "sha256": "4e46ba5754b823c558d88e172aee205517a220f340b6f907d3a1109534f49d75",
+    "test_used_for_checkpoint_selection": false
+  },
+  "checkpoint_unchanged": true,
+  "class_names": [
+    "dog",
+    "cat",
+    "wild"
+  ],
+  "confidence_note": "Softmax confidence is not calibrated; reused test samples are not a new independent evaluation.",
+  "device": "cpu",
+  "error_count": 0,
+  "predictions": [
+    {
+      "confidence": 0.9996180534362793,
+      "error": null,
+      "path": "afhq/val/dog/flickr_dog_000043.jpg",
+      "predicted_class": "dog",
+      "top3": [
+        {
+          "class_name": "dog",
+          "probability": 0.9996180534362793
+        },
+        {
+          "class_name": "wild",
+          "probability": 0.0003540267935022712
+        },
+        {
+          "class_name": "cat",
+          "probability": 2.792939449136611e-05
+        }
+      ]
+    },
+    {
+      "confidence": 0.9999687671661377,
+      "error": null,
+      "path": "afhq/val/cat/flickr_cat_000008.jpg",
+      "predicted_class": "cat",
+      "top3": [
+        {
+          "class_name": "cat",
+          "probability": 0.9999687671661377
+        },
+        {
+          "class_name": "dog",
+          "probability": 2.1371362890931778e-05
+        },
+        {
+          "class_name": "wild",
+          "probability": 9.83585778158158e-06
+        }
+      ]
+    },
+    {
+      "confidence": 0.9993815422058105,
+      "error": null,
+      "path": "afhq/val/wild/flickr_wild_000004.jpg",
+      "predicted_class": "wild",
+      "top3": [
+        {
+          "class_name": "wild",
+          "probability": 0.9993815422058105
+        },
+        {
+          "class_name": "cat",
+          "probability": 0.0006150825065560639
+        },
+        {
+          "class_name": "dog",
+          "probability": 3.3147002795885783e-06
+        }
+      ]
+    },
+    {
+      "confidence": 0.9999779462814331,
+      "error": null,
+      "path": "afhq/val/dog/flickr_dog_000045.jpg",
+      "predicted_class": "dog",
+      "top3": [
+        {
+          "class_name": "dog",
+          "probability": 0.9999779462814331
+        },
+        {
+          "class_name": "wild",
+          "probability": 2.0169603885733522e-05
+        },
+        {
+          "class_name": "cat",
+          "probability": 1.8671090629140963e-06
+        }
+      ]
+    },
+    {
+      "confidence": 0.9999995231628418,
+      "error": null,
+      "path": "afhq/val/cat/flickr_cat_000011.jpg",
+      "predicted_class": "cat",
+      "top3": [
+        {
+          "class_name": "cat",
+          "probability": 0.9999995231628418
+        },
+        {
+          "class_name": "wild",
+          "probability": 4.947906404595415e-07
+        },
+        {
+          "class_name": "dog",
+          "probability": 1.503185131923601e-08
+        }
+      ]
+    },
+    {
+      "confidence": 0.9934793710708618,
+      "error": null,
+      "path": "afhq/val/wild/flickr_wild_000012.jpg",
+      "predicted_class": "wild",
+      "top3": [
+        {
+          "class_name": "wild",
+          "probability": 0.9934793710708618
+        },
+        {
+          "class_name": "cat",
+          "probability": 0.0057294960133731365
+        },
+        {
+          "class_name": "dog",
+          "probability": 0.0007911274442449212
+        }
+      ]
+    }
+  ],
+  "source": "Reused final-test images (not new external validation)",
+  "success_count": 6,
+  "visual": "results/inference_demo.png",
+  "model_export": {
+    "checkpoint": "checkpoints/best_model.pt",
+    "sha256": "4e46ba5754b823c558d88e172aee205517a220f340b6f907d3a1109534f49d75",
+    "original_evaluation_sha256": "a7fe1ad467ba1de8059c06b317f95600c9437cfee4d726201dfe73a1b109e509",
+    "tensor_state_unchanged": true,
+    "metadata_change": "Absolute development paths converted to portable relative paths.",
+    "selected_epoch": 5,
+    "dev_validation_loss": 0.00730585365807671,
+    "class_names": [
+      "dog",
+      "cat",
+      "wild"
+    ]
+  }
+}
